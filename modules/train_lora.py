@@ -122,7 +122,7 @@ def do_train(lora_name: str, always_override: bool, save_steps: int, micro_batch
         return
 
     elif not shared.args.load_in_8bit and shared.args.wbits <= 0:
-        logging.warning("It is highly recommended you use `--load-in-8bit` for LoRA training. *(Will continue anyway in 2 seconds, press `Interrupt` to stop.)*")
+        logging.warning("It is highly recommended you use `--load-in-8bit` for LoRA training. *(Will continue anyway in 2 seconds, press `CTRL+C` to stop.)*")
         time.sleep(2)  # Give it a moment for the message to show in UI before continuing
 
     if cutoff_len <= 0 or micro_batch_size <= 0 or batch_size <= 0 or actual_lr <= 0 or lora_rank <= 0 or lora_alpha <= 0:
