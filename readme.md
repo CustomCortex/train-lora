@@ -11,11 +11,10 @@ git clone https://github.com/oobabooga/GPTQ-for-LLaMa.git
 git clone https://github.com/johnsmith0031/alpaca_lora_4bit.git
 pip install -r GPTQ-for-LLaMa/requirements.txt
 pip install -r alpaca_lora_4bit/requirements.txt
-cd alpaca_lora_4bit
+cd GPTQ-for-LLaMa
 python setup_cuda.py install
 ```
 
-```
 
 ## To train
 
